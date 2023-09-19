@@ -1,0 +1,11 @@
+F:\Project Work\Project\2017\HotelDemo\HotelDemo.Models\bin\Debug\HotelDemo.Models.dll
+F:\Project Work\Project\2017\HotelDemo\HotelDemo.Models\bin\Debug\HotelDemo.Models.pdb
+F:\Project Work\Project\2017\HotelDemo\HotelDemo.Models\obj\Debug\HotelDemo.Models.csproj.CoreCompileInputs.cache
+F:\Project Work\Project\2017\HotelDemo\HotelDemo.Models\obj\Debug\HotelDemo.Models.dll
+F:\Project Work\Project\2017\HotelDemo\HotelDemo.Models\obj\Debug\HotelDemo.Models.pdb
+E:\Git Projects\HotelDemo\HotelDemo.Models\bin\Debug\HotelDemo.Models.dll
+E:\Git Projects\HotelDemo\HotelDemo.Models\bin\Debug\HotelDemo.Models.pdb
+E:\Git Projects\HotelDemo\HotelDemo.Models\obj\Debug\HotelDemo.Models.csproj.AssemblyReference.cache
+E:\Git Projects\HotelDemo\HotelDemo.Models\obj\Debug\HotelDemo.Models.csproj.CoreCompileInputs.cache
+E:\Git Projects\HotelDemo\HotelDemo.Models\obj\Debug\HotelDemo.Models.dll
+E:\Git Projects\HotelDemo\HotelDemo.Models\obj\Debug\HotelDemo.Models.pdb

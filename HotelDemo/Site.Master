@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="HotelDemo.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>Hotel | Demo</title>
+
+    <!-- CSS style Horizontal Nav-->
+    <link href="css/layouts/style-horizontal.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <asp:ContentPlaceHolder ID="HeadArea" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header id="header" class="page-topbar">
+            <!-- start header nav-->
+            <div class="navbar-fixed">
+                <nav class="navbar-color">
+                    <div class="nav-wrapper">
+                        <ul class="left">
+                            <li>
+                                <h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1">Hotel Demo</a> </h1>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+
+                <nav id="horizontal-nav" class="white hide-on-med-and-down">
+                    <div class="nav-wrapper">
+                        <ul id="ul-horizontal-nav" class="left hide-on-med-and-down">
+
+                            <%if (Convert.ToString(Session["UserType"]) == "2")
+                                {%>
+                            <li>
+                                <a href="dashboard" class="indigo-text">
+                                    <i class="mdi-action-dashboard"></i>
+                                    <span>Dashboard</span>
+                                </a>
+                            </li>
+
+                            <%}
+                                else
+                                { %>
+                            <li>
+                                <a href="adashboard" class="indigo-text">
+                                    <i class="mdi-action-dashboard"></i>
+                                    <span>Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="User" class="indigo-text">
+                                    <i class="mdi-communication-email"></i>
+                                    <span>User List</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="UserLog" class="indigo-text">
+                                    <i class="mdi-communication-email"></i>
+                                    <span>User Logs</span>
+                                </a>
+                            </li>
+                            <%} %>
+                            <li>
+                                <asp:LinkButton class="dropdown-menu indigo-text" OnClick="lnkLogout_Click" data-activates="CSSdropdown" runat="server" ID="lnkLogout">
+                                      <i class="mdi-action-invert-colors"></i>
+                                    <span>Logout</span>
+                                </asp:LinkButton>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+            <!-- end header nav-->
+        </header>
+
+        <asp:ContentPlaceHolder ID="ContentArea" runat="server">
+        </asp:ContentPlaceHolder>
+
+    </form>
+
+    <!-- jQuery Library -->
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <!--materialize js-->
+    <script type="text/javascript" src="js/materialize.js"></script>
+
+    <asp:ContentPlaceHolder ID="JavaScriptArea" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>
